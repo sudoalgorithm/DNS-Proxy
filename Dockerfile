@@ -1,3 +1,9 @@
-FROM python:3.8-alpine
-RUN pip install gunicorn
-EXPOSE 53
+FROM python:2.7
+
+WORKDIR /usr/src/app
+
+COPY . /usr/src/app/
+
+EXPOSE 12853
+
+CMD ["python", "/usr/src/app/dns-over-tls-proxy.py"]
