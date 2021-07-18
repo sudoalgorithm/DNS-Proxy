@@ -52,7 +52,7 @@ def connection_to_dns_server(dns_host, dns_port):
   sock.settimeout(10)
   context = ssl.SSLContext(ssl.PROTOCOL_SSLv23)
   context.verify_mode = ssl.CERT_REQUIRED
-  context.load_verify_locations('/Users/sudoalgorithm/Desktop/DNS-Proxy/self-cert.pem')
+  context.load_verify_locations('/etc/ssl/certs/ca-certificates.crt')
   wrappedSocket = context.wrap_socket(sock, server_hostname=dns_host)
   wrappedSocket.connect((dns_host , dns_port))
   return wrappedSocket
