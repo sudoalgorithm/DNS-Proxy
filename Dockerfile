@@ -1,9 +1,5 @@
-FROM python:2.7
-
+FROM python:3.8-alpine
 WORKDIR /usr/src/app
-
 COPY . /usr/src/app/
-
-EXPOSE 12853
-
-CMD ["python", "/usr/src/app/dns-over-tls-proxy.py"]
+EXPOSE 53
+CMD ["python3", "/usr/src/app/dns-over-tls-proxy.py"]
