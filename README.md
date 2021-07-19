@@ -15,7 +15,7 @@
     - logging: to log message
     - binascii: convert binary to Hexadecimal conversion
 4. Connection from the client to proxy and proxy to destination google's dns server are seperate process.
-5. python3.7-apline image is used as the base image for the proxy container
+5. python:3.7-alpine image is used as the base image for the proxy container
 
 - Implementation Details
 
