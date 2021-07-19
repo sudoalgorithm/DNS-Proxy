@@ -69,5 +69,5 @@ docker run -d --name proxy -p 53:53 proxy:v1
 
 - Once the container or programe is running, run this command from any other terminal on same host
 ```
-dig @<tcp_server_host> -p 53 +tcp knrmalhotra.com
+dig @0.0.0.0 -p 53 +tcp knrmalhotra.com
 ```
