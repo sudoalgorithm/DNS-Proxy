@@ -1,5 +1,3 @@
-## N26 SRE Challenge
-
 # DNS Proxy 
 
 ### Implementation
